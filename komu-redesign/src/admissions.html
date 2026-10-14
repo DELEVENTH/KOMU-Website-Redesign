@@ -1,0 +1,68 @@
+  <section class="page-hero">
+    <img src="images/gallery-photos/01KSZCCW5GTYFRKS7Q5HFE5NYH.jpeg" alt="">
+    <div class="wrap ph-in">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Admissions</span></nav>
+      <h1>Admissions 2026/2027</h1>
+      <p class="lede">Undergraduate, JUPEB, IJMB and continuing-education programmes. Check your eligibility, compare the routes and follow the steps to apply.</p>
+      <nav class="subnav" aria-label="On this page"><a href="#eligibility">Am I eligible?</a><a href="#routes">Programmes</a><a href="#how">How to apply</a><a href="#how">Key dates</a></nav>
+    </div>
+  </section>
+
+  <section class="section" id="admissions" aria-labelledby="adm-h">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Admissions 2026/2027</p>
+        <h2 id="adm-h">Find your route into KOMU</h2>
+        <p class="sub">Degree, foundation and continuing-education programmes. Check the cut-off for your course before you pay the ₦2,000 processing fee.</p>
+      </div>
+      <div class="adm">
+        <div class="elig rv" id="eligibility">
+          <h3>Am I eligible?</h3>
+          <p class="hint">Based on the published 2026/2027 Post-UTME requirements. The University’s admission list is final.</p>
+          <form id="eligForm" onsubmit="return false">
+            <fieldset>
+              <legend>How are you applying?</legend>
+              <div class="opts">
+                <label><input type="radio" name="mode" value="utme" checked><span>UTME</span></label>
+                <label><input type="radio" name="mode" value="de"><span>Direct Entry</span></label>
+              </div>
+            </fieldset>
+            <label class="f">Programme<select id="eProg" name="prog"></select></label>
+            <label class="f utme-only">2026 UTME score (out of 400)<input id="eScore" name="score" type="number" min="0" max="400" inputmode="numeric" placeholder="e.g. 212"></label>
+            <fieldset class="utme-only">
+              <legend>Did you choose KOMU as first choice when you registered for UTME?</legend>
+              <div class="opts">
+                <label><input type="radio" name="first" value="yes" checked><span>Yes</span></label>
+                <label><input type="radio" name="first" value="no"><span>No, I changed later</span></label>
+              </div>
+            </fieldset>
+          </form>
+          <div class="result" id="eResult" aria-live="polite"></div>
+        </div>
+        <div class="routes rv" id="routes" style="--d:.1s">
+          <div class="tabs" role="tablist" aria-label="Programme types" id="progTabs"></div>
+          <div class="route-panel" id="progPanel" role="tabpanel"></div>
+        </div>
+      </div>
+
+      <div class="how" id="how">
+        <div class="rv">
+          <h3>How to apply</h3>
+          <ol class="steps">
+            <li><b>Check the criteria</b><span>Confirm the cut-off, UTME subjects and first-choice rules for your programme.</span></li>
+            <li><b>Start an application</b><span>Open the form, validate your JAMB registration number and note your application number.</span></li>
+            <li><b>Fill and submit</b><span>Your JAMB number, date of birth and state must match CAPS.</span></li>
+            <li><b>Pay ₦2,000 on Remita</b><span>Card, transfer, USSD, bank invoice or Remita wallet.</span></li>
+            <li><b>Print your slip</b><span>Use “Continue previous admission process” to return and print your acknowledgement slip.</span></li>
+          </ol>
+        </div>
+        <dl class="dates rv" style="--d:.1s">
+          <h4>Key dates</h4>
+          <div><dt>Post-UTME &amp; DE, main</dt><dd>1 Jun – 31 Jul 2026<small class="closed">Closed</small></dd></div>
+          <div><dt>Supplementary &amp; DE</dt><dd>From 1 Sep 2026<small class="open">Open</small></dd></div>
+          <div><dt>IJMB 2026/2027</dt><dd>Deadline 20 Aug 2026<small class="closed">Passed</small></dd></div>
+          <div><dt>Processing fee</dt><dd>₦2,000<small class="closed">Non-refundable</small></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
